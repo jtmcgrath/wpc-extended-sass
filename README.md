@@ -1,4 +1,5 @@
-# Automated Sass Export plugin for [WordPress Customizer Extended](https://github.com/jtmcgrath/wpc-extended)
+# Automated Sass Export plugin
+*For [WordPress Customizer Extended](https://github.com/jtmcgrath/wpc-extended)*
 
 This plugin adds automatic Sass export to the [WPC Extended](https://github.com/jtmcgrath/wpc-extended) plugin. With both plugins installed, any customizer settings are compiled directly to Sass, and the live stylesheet is updated when the customizer settings are saved. Check out the child plugin repo for more information.
 
