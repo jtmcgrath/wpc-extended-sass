@@ -1,7 +1,7 @@
-# Automated Sass Export plugin
+# Automated Sass Export
 *For [WordPress Customizer Extended](https://github.com/jtmcgrath/wpc-extended)*
 
-This plugin adds automatic Sass export to the [WPC Extended](https://github.com/jtmcgrath/wpc-extended) plugin. With both plugins installed, any customizer settings are compiled directly to Sass, and the live stylesheet is updated when the customizer settings are saved. Check out the child plugin repo for more information.
+This plugin adds automatic Sass export to [WPC Extended](https://github.com/jtmcgrath/wpc-extended). With both plugins installed, any customizer settings are compiled directly to Sass, and the live stylesheet is updated when the customizer settings are saved. Check out the child plugin repo for more information.
 
 ## Getting Started
 
@@ -21,7 +21,7 @@ By default, the plugin looks for a file located at `theme_directory/sass/style.s
 4. Create a `style.scss` file in the `/sass/` folder.
 5. Add your theme's metadata to the top of the `style.scss` file (either directly or via an `@import` statement).
 6. Create your Scss as desired.
-7. Add options to the Customizer.
+7. Add customizer options in your theme's `functions.php` file.
 
 ## Built With
 
