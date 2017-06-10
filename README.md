@@ -23,6 +23,10 @@ By default, the plugin looks for a file located at `theme_directory/sass/style.s
 6. Create your Scss as desired.
 7. Add customizer options in your theme's `functions.php` file.
 
+## Documentation
+
+The documentation only applies to the old structure of the plugin, before the Sass export functions were moved into a separate extension. Since I'm moving to a different country in the next few weeks, it might take a little while before I can fix this, but it will happen at some point! The old docs are now available in the [old-documentation](https://github.com/jtmcgrath/wpc-extended/tree/master/old-documentation) folder.
+
 ## Built With
 
 - [SCSSPHP](https://github.com/leafo/scssphp) - SCSS compiler written in PHP.
