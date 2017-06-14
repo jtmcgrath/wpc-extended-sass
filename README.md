@@ -23,9 +23,25 @@ By default, the plugin looks for a file located at `theme_directory/sass/style.s
 6. Create your Scss as desired.
 7. Add customizer options in your theme's `functions.php` file.
 
-## Documentation
+## [Wiki](https://github.com/jtmcgrath/wpc-extended-sass/wiki)
 
-The documentation only applies to the old structure of the plugin, before the Sass export functions were moved into a separate extension. Since I'm moving to a different country in the next few weeks, it might take a little while before I can fix this, but it will happen at some point! The old docs are now available in the [old-documentation](https://github.com/jtmcgrath/wpc-extended/tree/master/old-documentation) folder.
+[**Guide**](https://github.com/jtmcgrath/wpc-extended-sass/wiki/Guide) - Detailed, step-by-step instructions on how to configure the plugin using a simple example.
+
+[**Options**](https://github.com/jtmcgrath/wpc-extended-sass/wiki/Options) - A list of all available options specific to the Sass extension.
+
+[**Using Settings**](https://github.com/jtmcgrath/wpc-extended-sass/wiki/Using-Settings) - A list of methods which allow you to access the Customizer settings in php files.
+
+[**Sass Vardump**](https://github.com/jtmcgrath/wpc-extended-sass/wiki/Sass-Vardump) - An explanation of the Sass Vardump file, including an example.
+
+### Refer to the [WPC Extended wiki](https://github.com/jtmcgrath/wpc-extended/wiki) for further information on the following topics:
+
+[**Options**](https://github.com/jtmcgrath/wpc-extended/wiki/Options) - A list of all available Customizer-related options.
+
+[**Controls**](https://github.com/jtmcgrath/wpc-extended/wiki/Controls) - A list of all available Customizer controls.
+
+[**Using Settings**](https://github.com/jtmcgrath/wpc-extended/wiki/Using-Settings) - A list of methods which allow you to access the Customizer settings in php files.
+
+[**Comprehensive Example**](https://github.com/jtmcgrath/wpc-extended/wiki/Comprehensive-Example) - Example code for a theme's `functions.php` file demonstrating all available controls.
 
 ## Built With
 
