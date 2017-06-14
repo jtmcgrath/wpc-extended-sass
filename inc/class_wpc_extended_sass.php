@@ -122,18 +122,6 @@ class WPC_Extended_Sass extends WPC_Extended {
 	}
 
 	/**
-	 * Sets CSS backup quantity.
-	 *
-	 * @since 1.0.0
-	 * @access public
-	 *
-	 * @param int $quantity Number of css backup files to create.
-	 */
-	public function set_css_backup_quantity( $quantity ) {
-		$this->css_backup_quantity = $quantity;
-	}
-
-	/**
 	 * Sets Sass input directory.
 	 *
 	 * @since 1.0.0
@@ -155,6 +143,18 @@ class WPC_Extended_Sass extends WPC_Extended {
 	 */
 	public function set_sass_output_directory( $directory ) {
 		$this->sass_output_directory = $directory;
+	}
+
+	/**
+	 * Sets CSS backup quantity.
+	 *
+	 * @since 1.0.0
+	 * @access public
+	 *
+	 * @param int $quantity Number of css backup files to create.
+	 */
+	public function set_css_backup_quantity( $quantity ) {
+		$this->css_backup_quantity = $quantity;
 	}
 
 	/**
