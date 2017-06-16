@@ -12,4 +12,11 @@
 if ( ! defined( "ABSPATH" ) ) exit; // Exit if accessed directly.
 
 require_once plugin_dir_path( __FILE__ ) . 'inc/class_wpc_extended_sass.php';
+
+function wpc_extended_sass_controls() {
+	if ( is_customize_preview() ) :
+		require_once plugin_dir_path( __FILE__ ) . 'inc/custom_controls.php';
+	endif;
+}
+add_action('wp_loaded', 'wpc_extended_sass_controls', 11);
 ?>
