@@ -304,6 +304,18 @@ class WPC_Extended_Sass extends WPC_Extended {
 
 				// Add value to string.
 				$var_dump .= "\$$setting_id: $value;\n";
+
+				// If setting is an image upload form, get dimensions
+				if ( $data['type'] === 'image' ) {
+					if ( $values[$setting_id] === "''" || empty ( $values[$setting_id] ) ) :
+						$size = [ 0, 0 ];
+					else :
+						$size = getimagesize( $this->get_setting( $setting_id, [ 'no_quotes' ] ) );
+					endif;
+
+					$var_dump .= "\${$setting_id}_width: {$size[0]};\n";
+					$var_dump .= "\${$setting_id}_height: {$size[1]};\n";
+				}
 			endif;
 		endforeach;
 
