@@ -207,10 +207,12 @@ class WPC_Extended_Sass extends WPC_Extended {
 			case 'uri' :
 			case 'live' :
 				$path = $this->template_directory_uri;
+				$version = '?v=' . $this->get_version();
 				break;
 
 			default :
 				$path = $this->template_directory;
+				$version = '';
 				break;
 		endswitch;
 
@@ -229,7 +231,7 @@ class WPC_Extended_Sass extends WPC_Extended {
 			case 'sass_output' :
 			case 'sass output' :
 			case 'output' :
-				$path .= "/$this->sass_output_directory/$this->sass_output";
+				$path .= "/$this->sass_output_directory/$this->sass_output$version";
 				break;
 
 			case 'stylesheet' :
@@ -237,7 +239,7 @@ class WPC_Extended_Sass extends WPC_Extended {
 			case 'live_css' :
 			case 'live css' :
 			case 'css' :
-				$path .= "/$this->live_css";
+				$path .= "/$this->live_css$version";
 				break;
 		endswitch;
 
@@ -341,6 +343,11 @@ class WPC_Extended_Sass extends WPC_Extended {
 		}
 
 		copy( $this->get_path( 'sass_output' ), $live_css_path );
+
+		// Increase version number
+		$current_version = 1 + $this->get_version();
+
+		update_option( 'wpc_extended_sass_version', $current_version );
 	}
 
 	/**
@@ -355,6 +362,16 @@ class WPC_Extended_Sass extends WPC_Extended {
 			$instance = new WPC_Extended_Sass;
 		}
 		return $instance;
+	}
+
+	/**
+	 * Internal css version number to ensure cache-busting.
+	 *
+	 * @since 1.0.0
+	 * @access public
+	 */
+	public function get_version() {
+		return get_option( 'wpc_extended_sass_version', 1 );
 	}
 
 	/**
